@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,15 +21,16 @@ import { CreateRecipeComponent } from './page/create-recipe/create-recipe.compon
     HomeComponent,
     PageNotFoundComponent,
     ViewRecipeComponent,
-    CreateRecipeComponent
+    CreateRecipeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ListRecipeModule,
-    HomeModule
+    HomeModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
